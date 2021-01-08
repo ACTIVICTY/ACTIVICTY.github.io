@@ -36,7 +36,12 @@
                 
         </style>
         <script>
-
+            var i = 0;
+            function loadnext(){
+                i = i+1;
+                document.getElementById("cdhead").innerHTML = "Activicty" + i;
+                
+            }
         </script>
     </head>
     <body>
@@ -48,10 +53,10 @@
             <h3 id = "JY">Jesus Youth NITC</h3>
         </div>
         <div id = "content">
-            <h1>Welcome to Activity</h1>
+            <h1 id = "cdhead">Welcome to Activity</h1>
             <p>Press on the next button to proceed into acticty</p>       
             <p><span style = "color: red;">!Reminder </span>You need to have good discussion to complete this activicty as soon as possible</p> 
-            <button>Next</button>    
+            <button onclick = "loadnext()" >Next</button>    
         </div>
     </body>
 </html>
